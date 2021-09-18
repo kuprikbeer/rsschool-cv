@@ -1,1 +1,1 @@
-# rsschool-cv
+https://kuprikbeercd.github.io/rsschool-cv/cv
