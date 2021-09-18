@@ -1,6 +1,6 @@
 ## 1. **Yauheni Kupryian**
 Date of Birth: 30 november 1983
-Location: Rechitsa, Gomel regiongit status
+Location: Rechitsa, Gomel region
 
 ## 2. **Contacts:**
 A1: +375 (44) 7305730
