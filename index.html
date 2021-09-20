@@ -6,125 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My awesome CV</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Zen+Tokyo+Zoo&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
     <div class="content">
         <div class="container">
-            <div class="flex__box">
-                <div class="left">
-                    <div class="img__box">
-                        <img src="images/CROPPED-oqVHcb8t7Mo.jpg" alt="My photo" class="img">
-                    </div>
-                    <section class="contact">
-                        <h2 class="contact__title">
-                            CONTACT INFO
-                        </h2>
-                        <ul>
-                            <li class="phone">
-                                <div class="phone__title">PHONE</div>
-                                <div class="phone__info">
-                                    A1: +375 (44) 7305730 <br>
-                                    MTS: +375 (33) 3947159
-                                </div>
-                            </li>
-                            <li class="email">
-                                <div class="email__title">EMAIL</div>
-                                <div class="email__info">
-                                    <a href="mailto:kuprikbeer@gmail.com">kuprikbeer@gmail.com</a>
-                                </div>
-                            </li>
-                            <li class="loc">
-                                <div class="loc__title">LOCATION</div>
-                                <div class="loc__info">
-                                    Sovetskaya str. 151/65, Rechitsa, Gomel region
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="education">
-                        <h2>EDUCATION</h2>
-                        <p> <b>1999-2003</b> Gomel State Road-Building College - Technical operation of road-building
-                            cars and equipment. </p>
-                        <p> <b>2006-2010</b> Belarusian National Technical University - Organization of transportations
-                            and management on automobile and city transport.</p>
-                        <p> <b>2020-present</b> Digital Unicorn - Front-end development course.</p>
-                    </section>
-                    <section class="skills">
-                        <h2 class="skills__title">SKILLS</h2>
-                        <ul class="skills__info">
-                            <li>HTML,CSS</li>
-                            <li>Basic OOP,JavaScript</li>
-                            <li>Bootstrap,Sass</li>
-                            <li>Git,GitHub</li>
-                            <li>VSCode,Sublime Text</li>
-                            <li>Figma,Photoshop</li>
-                        </ul>
-                    </section>
-                </div>
-                <div class="right">
-                    <h1>Kupr<span class="y">y</span>ian <span class="y">Y</span>auheni</h1>
-                    <section class="profile">
-                        <h2 class="profile__title">
-                            PROFILE
-                        </h2>
-                        <p>My goal is to obtain the position of a Junior JavaScript Developer. I like to learn something
-                            new and i am open to new professional horisons. My main qualities: strong interpersonal
-                            skills,
-                            open-minded and quick learner.</p>
-                        <p>Currently i'm studing Front-end development on Digital Unicorn course. </p>
-                    </section>
-                    <section class="experience">
-                        <h2 class="experience__title">
-                            EXPERIENCE
-                        </h2>
-                        <div class="experience__info">
-                            <p><b>2003</b>-present Belarusneft - Oil production operator</p>
-                            <p> <b>2020-present</b> Digital Unicorn - Front-end development course.</p>
-                        </div>
-                    </section>
-                    <section class="languages">
-                        <h2 class="lang__title">
-                            LANGUAGES
-                        </h2>
-                        <ul class="lang__info">
-                            <li> English: B1-B2</li>
-                            <li> French:A1</li>
-                            <li> Norwegian:A1</li>
-                        </ul>
-                    </section>
-                    <section class="code">
-                        <h2>CODE EXAMPLES</h2>
-                        <pre>
-                            function DNAStrand(dna) {
-                                let res = dna.split('')
-                                for (let i = 0; i &lt; res.length; i++) {
-                                  switch (res[i]) {
-                                    case 'A':
-                                      res[i] = 'T'
-                                      break;
-                                    case 'T':
-                                      res[i] = 'A'
-                                      break;
-                                    case 'C':
-                                      res[i] = 'G'
-                                      break;
-                                    case 'G':
-                                      res[i] = 'C'
-                                      break;
-                                  }
-                                }
-                                return res.join('')
-                              };
+            <main>
+                <div class="flex__box">
+
+                    <div class="right">
+                        <header>
+                            <h1>Kupr<span class="y">y</span>ian <span class="y">Y</span>auheni</h1>
+                            <div class="img__phone">
+                                <img src="images/CROPPED-oqVHcb8t7Mo.jpg" alt="My photo" class="img">
+                            </div>
+                        </header>
+                        <section class="profile">
+                            <h2 class="profile__title">
+                                PROFILE
+                            </h2>
+                            <p>My goal is to obtain the position of a Junior JavaScript Developer. I like to learn
+                                something
+                                new and i am open to new professional horisons. My main qualities: strong interpersonal
+                                skills,
+                                open-minded and quick learner.</p>
+                            <p>Currently i'm studing Front-end development on Digital Unicorn course. </p>
+                        </section>
+                        <section class="experience">
+                            <h2 class="experience__title">
+                                EXPERIENCE
+                            </h2>
+                            <div class="experience__info">
+                                <p><b>2003-present</b> Belarusneft - Oil production operator</p>
+                                <p> <b>2020-present</b> Digital Unicorn - Front-end development course.</p>
+                            </div>
+                        </section>
+                        <section class="languages">
+                            <h2 class="lang__title">
+                                LANGUAGES
+                            </h2>
+                            <ul class="lang__info">
+                                <li> English: B1-B2</li>
+                                <li> French: A1</li>
+                                <li> Norwegian: A1</li>
+                            </ul>
+                        </section>
+                        <section class="code">
+                            <h2>CODE EXAMPLE</h2>
+                            <pre>
+                                <code >
+                                    function DNAStrand(dna) {
+                                        let res = dna.split('')
+                                        for (let i = 0; i &lt; res.length; i++) {
+                                          switch (res[i]) {
+                                            case 'A':
+                                              res[i] = 'T'
+                                              break;
+                                            case 'T':
+                                              res[i] = 'A'
+                                              break;
+                                            case 'C':
+                                              res[i] = 'G'
+                                              break;
+                                            case 'G':
+                                              res[i] = 'C'
+                                              break;
+                                          }
+                                        }
+                                        return res.join('')
+                                      };
+                            </code>
                         </pre>
-                    </section>
+                        </section>
+
+                    </div>
+                    <aside class="left">
+                        <div class="img__box">
+                            <img src="images/CROPPED-oqVHcb8t7Mo.jpg" alt="My photo" class="img">
+                        </div>
+                        <section class="contact">
+                            <h2 class="contact__title">
+                                CONTACT INFO
+                            </h2>
+                            <ul>
+                                <li class="phone">
+                                    <div class="phone__title">PHONE</div>
+                                    <div class="phone__info">
+                                        A1: +375 (44) 7305730 <br>
+                                        MTS: +375 (33) 3947159
+                                    </div>
+                                </li>
+                                <li class="email">
+                                    <div class="email__title">EMAIL</div>
+                                    <div class="email__info">
+                                        <a href="mailto:kuprikbeer@gmail.com">kuprikbeer@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li class="loc">
+                                    <div class="loc__title">LOCATION</div>
+                                    <div class="loc__info">
+                                        Sovetskaya str. 151/65, Rechitsa, Gomel region
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="education">
+                            <h2>EDUCATION</h2>
+                            <p> <b>1999-2003</b> Gomel State Road-Building College - Technical operation of
+                                road-building
+                                cars and equipment. </p>
+                            <p> <b>2006-2010</b> Belarusian National Technical University - Organization of
+                                transportations
+                                and management on automobile and city transport.</p>
+                            <p> <b>2020-present</b> Digital Unicorn - Front-end development course.</p>
+                        </section>
+                        <section class="skills">
+                            <h2 class="skills__title">SKILLS</h2>
+                            <ul class="skills__info">
+                                <li>HTML, CSS</li>
+                                <li>Basic OOP, JavaScript</li>
+                                <li>Bootstrap, Sass</li>
+                                <li>Git, GitHub</li>
+                                <li>VSCode, Sublime Text</li>
+                                <li>Figma, Photoshop</li>
+                            </ul>
+                        </section>
+                        <section class="project">
+                            <h2>PROJECT EXAMPLE</h2>
+                            <a href="https://gitlab.com/kuprikbeer/marvel_app">My project link</a>
+                        </section>
+                    </aside>
                 </div>
-            </div>
+            </main>
             <footer class="footer">
                 <div class="git__link">
                     <a href="https://github.com/kuprikbeer/rsschool-cv.git">

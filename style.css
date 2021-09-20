@@ -39,6 +39,7 @@ a:link{
     text-decoration: none;
     color:#fff;
     font-size: 20px;
+    cursor: pointer;
 }
 
 /* Основные стили CV */
@@ -119,12 +120,13 @@ h2::after{
 }
 .contact,
 .education,
-.skills{
+.skills,
+.project{
     padding-top: 35px;
     background-color: rgb(56, 67, 90);
     color: #fff;
 }
-.skills{
+.project{
     border-radius: 0 0 5px 5px;
 }
 .contact{
@@ -169,21 +171,19 @@ ul{
     display: flex;
     border-radius: 5px 5px 0 0 ;
     height: 100px;
+    justify-content: space-around;
+    align-items: center;
 }
 span{
    color: #fff; 
    font-size: 30px;
 }
-.rs ,
-.git__link {
-padding-top: 30px;
-margin-left: 320px;
-}
 .rs a,
 .git__link a{
 font-size: 30px;
 }
-.contact a:hover{
+.contact a:hover,
+.project a:hover{
     color: #F58B1FFF;
     transition: .3;
 }
@@ -191,6 +191,146 @@ a:hover{
     color: rgb(56, 67, 90);
     transition: .3;
 }
+.img__phone{
+    display: none;
+}
 
+pre span{
+    font-size: 18px;
+}
+/* адаптив */
 
+@media (max-width:1100px){
+    *,
+    *::after,
+    *::before{
+        font-size: 18px;
+    }
+    h1{
+        margin: 50px;
+        font-size: 83px;
+    }
+    .y{
+        font-size: 83px;
+    }
+    h2{
+        margin: 15px 0;
+    }
+    section{
+        padding: 10px;
+    }
+    .contact, .education, .skills, .project{
+        padding-top: 10px;
+    }
+}
+@media (max-width:990px){
+    h2{
+        margin: 10px 0;
+        font-size: 22px;
+    }
+    h1{
+        margin: 30px;
+        font-size: 80px;
+    }
+    .y{
+        font-size: 80px;
+    }
+    .left{
+        margin-top: 50px;
+    }
+    section{
+        padding:5px 10px;
+    }
+}
+@media (max-width:900px){
+   
+    h1{
+        margin: 10px;
+        font-size: 70px;
+    }
+    .y{
+        font-size: 70px;
+    }
+    .left{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:767px){
+    .flex__box{
+        display: block;
+    }
+    .left{
+        max-width: 100%;
+        margin-right: 0;
+        
+    }
+    .img__box img{
+    display: none;
+    }
+    .img__phone{
+        display: flex;
+        justify-content: center;
+        padding: 0px 10px;
+    }
+    h1{
+        margin: 10px;
+        font-size: 90px;
+    }
+    .y{
+        font-size: 90px;
+    }
+    pre{
+        
+        margin-bottom:-80px ;
+        margin-top: -10px;
+       
+    }
+    .code{
+        padding: 0;
+    }
+}
+@media (max-width:610px){
+    h1{
+        margin: 10px;
+        font-size: 80px;
+    }
+    .y{
+        font-size: 80px;
+    }
+    *,
+    *::after,
+    *::before{
+       line-height: 1.4;
+    }
+    .left{
+        margin-top: 20px;
+    }
+}
+@media (max-width:500px){
+    *,
+    *::after,
+    *::before{
+        font-size: 16px;
+    }
+    h1{
+    margin: 0px 10px;
+    font-size: 70px;
+    
+    }
+    .y{
+        font-size: 70px;
+    }
+   .footer{
+       display: block;
+       text-align: center;
+
+   }
+   pre{
+   
+    margin-left: -150px;
+
+}
+   
+}
 
