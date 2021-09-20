@@ -1,0 +1,196 @@
+/* Сброс стилей */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.5;
+}
+ul,
+ol,
+li {
+  padding: 0;
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li
+{
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a,
+a:visited,
+a:link{
+    outline: none;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+}
+
+/* Основные стили CV */
+.content{
+    background-color: rgba(246, 216, 180, .5);
+}
+.container{
+    max-width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.flex__box{
+    display: flex;
+}
+h1{
+    font-size: 110px;
+    margin: 85px auto;
+    text-align: center;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: rgb(56, 67, 90);
+}
+.y{
+    color:#F58B1FFF ;
+    font-size: 110px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+h2{
+    margin: 30px 0px;
+    font-size: 26px;
+    text-align: center;
+    background-color:#F58B1FFF;
+    color: #fff;
+    position: relative;
+    
+}
+h2::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    border: 20px solid transparent;
+    border-top: 20px solid #fff;
+    border-left: 20px solid #fff;  
+    left: 0;
+    top: -1px;
+}
+h2::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    border-right: 20px solid #fff;  
+    right: 0;
+    top: -1px;
+}
+.left h2::before{
+    border-top: 20px solid rgb(56, 67, 90);
+    border-left: 20px solid rgb(56, 67, 90);  
+}
+.left h2::after{
+    border-bottom: 20px solid rgb(56, 67, 90);
+    border-right: 20px solid rgb(56, 67, 90);  
+}
+.left{
+    max-width: 33%;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+
+.phone__title,
+.email__title,
+.loc__title
+{
+    margin: 10px 0;
+    font-size: 22px;
+}
+.contact,
+.education,
+.skills{
+    padding-top: 35px;
+    background-color: rgb(56, 67, 90);
+    color: #fff;
+}
+.skills{
+    border-radius: 0 0 5px 5px;
+}
+.contact{
+    border-radius: 5px 5px 0 0;
+}
+section{
+    padding: 15px;
+}
+ul{
+    position: relative;
+}
+.skills li::before,
+.languages li::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #F58B1FFF;
+    display: block;
+    top: 7px;
+    left: 2px;
+}
+.skills li,
+.languages li{
+   position: relative;
+   padding-left: 20px;
+}
+.img__box{
+    margin-bottom: 45px;
+}
+.img__box img{
+    border: 0px transparent solid;
+    border-radius: 5px;
+}
+.logo{
+    width: 70px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer{
+    background-color:#F58B1FFF ;
+    display: flex;
+    border-radius: 5px 5px 0 0 ;
+    height: 100px;
+}
+span{
+   color: #fff; 
+   font-size: 30px;
+}
+.rs ,
+.git__link {
+padding-top: 30px;
+margin-left: 320px;
+}
+.rs a,
+.git__link a{
+font-size: 30px;
+}
+.contact a:hover{
+    color: #F58B1FFF;
+    transition: .3;
+}
+a:hover{
+    color: rgb(56, 67, 90);
+    transition: .3;
+}
+
+
+
